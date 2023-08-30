@@ -7,7 +7,7 @@ import random
 NUM_LEDS = 96
 BRIGHTNESS = 0.5
 
-led_strip = neopixel.NeoPixel(board.D18, NUM_LEDS, brightness=BRIGHTNESS, auto_write=False)  # Use the appropriate pin
+led_strip = neopixel.NeoPixel(board.DATA, NUM_LEDS, brightness=BRIGHTNESS, auto_write=False)  # Use the appropriate pin
 
 def rainbow_colors_pattern():
     try:
